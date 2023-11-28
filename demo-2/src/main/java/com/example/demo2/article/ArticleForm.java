@@ -9,7 +9,9 @@ import lombok.Setter;
 @Setter
 public class ArticleForm {
 
+    @NotEmpty(message = "제목을 입력하세요")
     private String subject;
 
+    @NotEmpty(message = "제목을 입력하세요")
     private String content;
 }

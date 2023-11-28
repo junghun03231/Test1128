@@ -7,7 +7,7 @@
 <body>
 <div>
   <h2>질문등록</h2>
-  <form th:action="@{/article/create}" method="post">
+  <form th:action="@{/article/create}" th:object="${articleForm}" method="post">
     <div>
       <label for="subject">제목</label>
       <input type="text" name="subject" id="subject">
