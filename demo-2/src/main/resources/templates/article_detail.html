@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>article_detail</title>
+</head>
+<body>
+<h2 th:text="${article.subject}"></h2>
+<div th:text="${article.content}"></div>
+
+<div><a th:href="@{|/article/list|}"><button>목록</button></a></div>
+</body>
+</html>
